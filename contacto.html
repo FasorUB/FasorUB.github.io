@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    <title>Prácticas de FHiC - PokerTiger - Contacto</title>
+    <style>
+        h1  {text-align: center ;color: rgb(18, 98, 11); font-size: 400% }
+        ul  {background-color: rgb(88, 154, 88); border: 2px solid gold; padding:20px; margin:0px;}
+        nav {text-align: center;}
+        .horizontal-list li {display: inline; margin-right: 75px;}
+        header  {padding: 1em; background-color: black; height: 8vh;text-align: left;border-style: groove;border-color: gold;}
+        p   {font-size: 150%;}
+        .p-info  {margin-left: 50px;}
+        .p-sup  {text-align: center;}
+        a {font-weight: bold; text-decoration: none; color: black; }
+        
+        /* Estils contenedor principal */
+        .contenedor {display: flex; width: 80%; margin: 10px; padding: 20px;}
+        /* Text de l'esquerra del formulari */
+        .text-left {flex: 2;font-size: 18px;}
+        /* Estils per al formulari de la dreta*/
+        .formulari {flex: 2; padding: 20px;background-color: #f0f0f0;border: 1px solid #ccc;}
+        /* Estils camps formularis*/
+        .camp {margin-bottom: 15px;}
+        .camp label {display: block;margin-bottom: 5px;font-weight: bold;}
+        .camp input[type="text"],
+        .camp input[type="email"],
+        .camp textarea,.camp input[type="number"] {width: 100%;padding: 10px;border: 1px solid #ccc;
+            border-radius: 5px;box-sizing: border-box;
+        }
+        /* Estila botó enviar */
+        .formulario button {width: 100%;padding: 10px;background-color: #007bff;color: white;
+            border: none;border-radius: 5px;cursor: pointer;
+        }
+        .formulario button:hover {
+            background-color: #0056b3;
+        }
+
+
+    </style>
+  </head>
+
+  <body>
+    <!-- Títol de la web + slogan-->
+    <header>
+        <span style="font-size: 40px; color: white;">Poker</span> 
+        <span style="font-size: 40px; color: red;">Tiger</span>
+        <span style="font-size: 20px; color: gold;"> Conviertete en el tigre de todas las mesas    
+        &hearts; &diams; &spades; &clubs;</span>
+    </header>
+
+    <!-- Llistat de les diferents pàgines de la web: Index, Miembros i contacto-->
+    <nav>    
+        <ul class="horizontal-list"> 
+            <li> <span style="font-size: 30px; font-weight: bold;">
+                <a href="http://127.0.0.1:5500/index.html">Web</a></span></li>
+            <li>  <span style="font-size: 30px; font-weight: bold;">
+                <a href="http://127.0.0.1:5500/miembros.html">Miembros</a></span> </li>
+            <li>  <span style="font-size: 30px; font-weight: bold;">
+                <a href="http://127.0.0.1:5500/contacto.html">Contacto</a></span> </li>
+        </ul>
+    </nav>
+
+    <!-- Info de contacte de la web-->
+    <h1> !Danos tu opinión! </h1>
+    <p class="p-sup"> Desde <span style="font-weight: bold;"> Poker</span> 
+        <span style="color: red; font-weight: bold;">Tiger</span> nos interesamos 
+        por la opinión de nuestros usuarios.<br> Leemos todas las 
+        sugerencias y consideramos todas las ideas para mejorar nuestro sitio web.
+    </p>
+    <hr>
+
+    <!-- Formulari crítica de l'usuari -->
+    <div class="contenedor">
+    <div class="text-left">
+        <p class="p-info"> Para contactar con nosotros:<br><br>
+            <strong> Email: </strong> PokerTigrissimos@keloke.pei<br><br>
+            <strong> Phone: </strong> 612 123 123<br><br>
+            <strong> Balaguer Office: </strong> C/ Marc Montgomery, 11.<br><br>
+            <strong> La Llagosta Office: </strong> C/ Daniel Quesadilla, 2. 
+        </p>
+    </div>
+    <div class="formulari">
+        <div class="camp">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre...">
+        </div>
+        <div class="camp">
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" placeholder="Escribe tus apellidos...">
+        </div>
+        <div class="camp">
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" placeholder="Escribe tu correo electrónico...">
+        </div>
+        <div class="camp">
+            <label for="opinion">Opinión:</label>
+            <textarea id="opinion" name="opinion" placeholder="Escribe tu opinión..."></textarea>
+        </div>
+        <div class="camp">
+            <label for="valoracion">Valoración (del 1 al 10):</label>
+            <input type="number" id="valoracion" name="valoracion" min="1" max="10">
+        </div>
+        <button type="submit">Enviar</button>
+    </div>
+</div>
+
+  </body>
