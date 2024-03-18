@@ -1,0 +1,117 @@
+    * {
+     box-sizing: border-box; 
+    }
+    body {
+      margin: 0;
+    }
+    #main {
+      display: flex;
+      min-height: calc(100vh - 13vh);
+      background-color: aquamarine;
+    }
+    #main > article {
+      flex: 1;
+      background-color:whitesmoke;
+      padding: 3px;
+      text-align: right;
+      background-image: url(/img/fondo);
+    } 
+    aside {
+      width: 20vh;
+      background-color: rgb(88, 88, 88);
+      border-style: groove;
+      border-color: gold;
+      border-top-style: hidden;
+    }
+    nav {
+      width: 20vh;
+      background-color: rgb(88, 88, 88);
+      order: -1;
+      border-style: groove;
+      border-color: gold;
+      border-top-style: hidden;
+    }
+    header, footer, article, nav, aside {
+      padding: 1em;
+    }
+    header {
+      background-color: black;
+      height: 8vh;
+      text-align: left;
+      border-style: groove;
+      border-color: gold;
+    }
+
+    footer {
+      position:fixed;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      background-color: black;
+      height: 5vh;
+      color: white;
+      border-style: groove;
+      border-color: gold;
+      border-bottom-style: hidden;
+      border-left-style: hidden;
+      border-right-style: hidden;
+    }
+
+    img{
+      border-radius: 50%;
+      margin-top: 25px;
+    }
+
+    h6{
+      margin-top: 20px;
+    }
+
+    span{
+      color:white;
+    }
+
+    :link{
+      color: goldenrod;
+      text-decoration: wavy;
+    }
+
+    :visited{
+      color: goldenrod;
+      text-decoration: wavy;
+    }
+
+    #barranavContainer{
+      margin-left: 500px;
+      display: inline-block;
+      top: -5px;
+    }
+
+    #contactonav{
+      width: 30px;
+      height: 30px;
+      display: inline;
+    }
+
+    #miembrosnav{
+      width: 30px;
+      display: inline;
+      margin-left: 50px;
+    }
+
+    #webnav{
+      width: 30px;
+      display: inline;
+      margin-left: 50px;
+    }
+
+    #boton1{
+      position: absolute;
+      width: 30px;
+      height: 7px;
+      background-color: goldenrod;
+      display: inline;
+      margin-left: 50px;
+      border-style:dashed;
+      border: 20px;
+      margin-top: 0px;
+    }
