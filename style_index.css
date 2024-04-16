@@ -12,7 +12,7 @@
     #main > article {
       flex: 1;
       background-color:whitesmoke;
-      padding: 3px;
+      padding: 0.311vh;
       text-align: right;
       background-image: url(/img/fondo);
     } 
@@ -44,9 +44,9 @@
 
     footer {
       position:fixed;
-      bottom: 0px;
-      left: 0px;
-      right: 0px;
+      bottom: 0vh;
+      left: 0vh;
+      right: 0vh;
       background-color: black;
       height: 5vh;
       color: white;
@@ -59,11 +59,11 @@
 
     img{
       border-radius: 50%;
-      margin-top: 25px;
+      margin-top: 2.591vh;
     }
 
     h6{
-      margin-top: 20px;
+      margin-top: 2.073vh;
     }
 
     span{
@@ -81,37 +81,37 @@
     }
 
     #barranavContainer{
-      margin-left: 500px;
+      margin-left: 51.813vh;
       display: inline-block;
-      top: -5px;
+      top: -0.518vh;
     }
 
     #contactonav{
-      width: 30px;
-      height: 30px;
+      width: 3.109vh;
+      height: 3.109vh;
       display: inline;
     }
 
     #miembrosnav{
-      width: 30px;
+      width: 3.109vh;
       display: inline;
-      margin-left: 50px;
+      margin-left: 5.181vh;
     }
 
     #webnav{
-      width: 30px;
+      width: 3.109vh;
       display: inline;
-      margin-left: 50px;
+      margin-left: 5.181vh;
     }
 
     #boton1{
       position: absolute;
-      width: 30px;
-      height: 7px;
+      width: 3.109vh;
+      height: 0.725vh;
       background-color: goldenrod;
       display: inline;
-      margin-left: 50px;
+      margin-left: 5.181vh;
       border-style:dashed;
-      border: 20px;
-      margin-top: 0px;
+      border: 2.073vh;
+      margin-top: 0vh;
     }
