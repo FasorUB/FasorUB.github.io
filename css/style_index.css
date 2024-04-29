@@ -1,117 +1,90 @@
     * {
-     box-sizing: border-box; 
+      box-sizing: border-box;
     }
+
     body {
       margin: 0;
     }
-    #main {
-      display: flex;
-      min-height: calc(100vh - 13vh);
-      background-color: aquamarine;
-    }
-    #main > article {
-      flex: 1;
-      background-color:whitesmoke;
-      padding: 0.311vh;
-      text-align: right;
-      background-image: url(/img/fondo);
-    } 
-    aside {
-      width: 20vh;
-      background-color: rgb(88, 88, 88);
-      border-style: groove;
-      border-color: gold;
-      border-top-style: hidden;
-    }
-    nav {
-      width: 20vh;
-      background-color: rgb(88, 88, 88);
-      order: -1;
-      border-style: groove;
-      border-color: gold;
-      border-top-style: hidden;
-    }
-    header, footer, article, nav, aside {
-      padding: 1em;
-    }
-    header {
-      background-color: black;
-      height: 8vh;
-      text-align: left;
-      border-style: groove;
-      border-color: gold;
+
+    .dropdown{
+      display: inline;
     }
 
-    footer {
-      position:fixed;
-      bottom: 0vh;
-      left: 0vh;
-      right: 0vh;
+
+    #leccionesdrop{
+      margin-left: 5vh;
+      color: goldenrod;
       background-color: black;
-      height: 5vh;
-      color: white;
-      border-style: groove;
-      border-color: gold;
-      border-bottom-style: hidden;
-      border-left-style: hidden;
-      border-right-style: hidden;
+      border-color: black;
     }
 
-    img{
+    #testdrop{
+      margin-left: 5vh;
+      color: goldenrod;
+      background-color: black;
+      border-color: black;
+    }
+
+    #leccionesmenu{
+      background-color: black;
+    }
+
+    #leccionesmenu{
+      background-color: black;
+    }
+
+    #testmenu{
+      background-color: black;
+    }
+
+    #principiante{
+      color: goldenrod;
+    }
+
+    #intermedio{
+      color: goldenrod;
+    }
+
+    #experto{
+      color: goldenrod;
+    }
+
+
+    img {
       border-radius: 50%;
       margin-top: 2.591vh;
     }
 
-    h6{
-      margin-top: 2.073vh;
+
+    span {
+      color: white;
     }
 
-    span{
-      color:white;
-    }
-
-    :link{
+    :link {
       color: goldenrod;
       text-decoration: wavy;
     }
 
-    :visited{
+    :visited {
       color: goldenrod;
       text-decoration: wavy;
     }
 
-    #barranavContainer{
-      margin-left: 51.813vh;
-      display: inline-block;
-      top: -0.518vh;
-    }
-
-    #contactonav{
+    #contactonav {
       width: 3.109vh;
       height: 3.109vh;
+      margin-left: 5.181vh;
       display: inline;
     }
 
-    #miembrosnav{
+    #miembrosnav {
       width: 3.109vh;
       display: inline;
       margin-left: 5.181vh;
     }
 
-    #webnav{
+    #webnav {
       width: 3.109vh;
       display: inline;
       margin-left: 5.181vh;
-    }
-
-    #boton1{
-      position: absolute;
-      width: 3.109vh;
-      height: 0.725vh;
-      background-color: goldenrod;
-      display: inline;
-      margin-left: 5.181vh;
-      border-style:dashed;
-      border: 2.073vh;
-      margin-top: 0vh;
     }
