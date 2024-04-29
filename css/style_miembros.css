@@ -1,45 +1,92 @@
 
-        h1  {
-            text-align: center ;color: rgb(18, 98, 11); font-size: 400%
-            }
-        h2  {text-align: center ;justify-content: center; color: rgb(0, 0, 0); font-size: 200% }
-        ul  {background-color: rgb(88, 154, 88); border: 2px solid gold; padding:20px; margin:0px;}
-        nav {text-align: center;}
-        .horizontal-list li {display: inline; margin-right: 75px;}
-        header  {padding: 1em; background-color: black; height: 8vh;text-align: left;border-style: groove;border-color: gold;}
-        p   {font-size: 150%;}
-        .p-info  {margin-left: 50px;}
-        .p-sup  {text-align: center;}
-        .p-cont {margin-left: 2px; text-align: center; font-size: 100%;}
-        a {font-weight: bold; text-decoration: none; color: black; }
         
         /* Estils contenedor principal */
-        .contenedor {display: flex; flex-direction: row; justify-content: flex-start; align-items: center; width: 90%; height: 50%; 
-            margin: 10px auto; padding: 20px; border: 1px solid #ffffff;}
+
+        * {
+          box-sizing: border-box;
+        }
+    
+        body {
+          margin: 0;
+        }
+    
+        .dropdown{
+          display: inline;
+        }
+    
+    
+        #leccionesdrop{
+          margin-left: 5vh;
+          color: goldenrod;
+          background-color: black;
+          border-color: black;
+        }
+    
+        #testdrop{
+          margin-left: 5vh;
+          color: goldenrod;
+          background-color: black;
+          border-color: black;
+        }
+    
+        #leccionesmenu{
+          background-color: black;
+        }
+    
+        #leccionesmenu{
+          background-color: black;
+        }
+    
+        #testmenu{
+          background-color: black;
+        }
+    
+        #principiante{
+          color: goldenrod;
+        }
+    
+        #intermedio{
+          color: goldenrod;
+        }
+    
+        #experto{
+          color: goldenrod;
+        }
+    
+    
+        span {
+          color: white;
+        }
+    
+        :link {
+          color: goldenrod;
+          text-decoration: wavy;
+        }
+    
+        :visited {
+          color: goldenrod;
+          text-decoration: wavy;
+        }
+    
+        #contactonav {
+          width: 3.109vh;
+          height: 3.109vh;
+          margin-left: 5.181vh;
+          display: inline;
+        }
+    
+        #miembrosnav {
+          width: 3.109vh;
+          display: inline;
+          margin-left: 5.181vh;
+        }
+    
+        #webnav {
+          width: 3.109vh;
+          display: inline;
+          margin-left: 5.181vh;
+        }
+    
         
-        /* Text de l'esquerra del formulari */
         .sub-contenedor {flex: 1; padding: 10px;height: 600px;text-align: center; border: 2px solid #ccc}
-        img{max-width: 80%; max-height: 80%; display: block; margin: auto;border: 1px solid #000000;}
-        .text-left {flex: 2;font-size: 18px;}
-        /* Estils per al formulari de la dreta*/
-        .formulari {flex: 2; padding: 20px;background-color: #f0f0f0;border: 1px solid #ccc;}
-        /* Estils camps formularis*/
-        .camp {margin-bottom: 15px;}
-        .camp label {display: block;margin-bottom: 5px;font-weight: bold;}
-        .camp input[type="text"],
-        .camp input[type="email"],
-        .camp textarea,.camp input[type="number"] {width: 100%;padding: 10px;border: 1px solid #ccc;
-            border-radius: 5px;box-sizing: border-box;
-        }
-        /* Estila botó enviar */
-        .formulario button {width: 100%;padding: 10px;background-color: #007bff;color: white;
-            border: none;border-radius: 5px;cursor: pointer;
-        }
-        .formulario button:hover {
-            background-color: #0056b3;
-        }
-        #barranavContainer{
-            margin-left: 500px;
-            display: inline-block;
-            top: -5x;
-          }
+        img{border-radius: 50%;max-width: 80%; max-height: 80%; display: block; margin: auto;border: 1px solid #000000;}
