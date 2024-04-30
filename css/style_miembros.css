@@ -86,6 +86,12 @@
           display: inline;
           margin-left: 5.181vh;
         }
+
+        #calculadoranav{
+          width: 3.109vh;
+          display: inline;
+          margin-left: 5.181vh;
+        }
     
         
         .sub-contenedor {flex: 1; padding: 10px;height: 600px;text-align: center; border: 2px solid #ccc}
