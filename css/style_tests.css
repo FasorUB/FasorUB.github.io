@@ -1,0 +1,113 @@
+*{
+    transition: all 0.25s;
+}
+body{
+    margin: 0;
+}
+.dropdown{
+    display: inline;
+  }
+#encabezado{
+    width: 80vw;
+    min-height: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+.opcion{
+    width: 70vw;
+    background: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.opcion:hover{
+    background: lightgray;
+
+
+}
+
+#leccionesdrop{
+    margin-left: 5vh;
+    color: goldenrod;
+    background-color: black;
+    border-color: black;
+  }
+
+  #testdrop{
+    margin-left: 5vh;
+    color: goldenrod;
+    background-color: black;
+    border-color: black;
+  }
+
+  #leccionesmenu{
+    background-color: black;
+  }
+
+  #leccionesmenu{
+    background-color: black;
+  }
+
+  #testmenu{
+    background-color: black;
+  }
+
+  #principiante{
+    color: goldenrod;
+  }
+
+  #intermedio{
+    color: goldenrod;
+  }
+
+  #experto{
+    color: goldenrod;
+  }
+
+
+  span {
+    color: white;
+  }
+
+  :link {
+    color: goldenrod;
+    text-decoration: wavy;
+  }
+
+  :visited {
+    color: goldenrod;
+    text-decoration: wavy;
+  }
+
+  #contactonav {
+    width: 3.109vh;
+    height: 3.109vh;
+    margin-left: 5.181vh;
+    display: inline;
+  }
+
+  #miembrosnav {
+    width: 3.109vh;
+    display: inline;
+    margin-left: 5.181vh;
+  }
+
+  #webnav {
+    width: 3.109vh;
+    display: inline;
+    margin-left: 5.181vh;
+  }
+
+  #calculadoranav{
+    width: 3.109vh;
+    display: inline;
+    margin-left: 5.181vh;
+  }
