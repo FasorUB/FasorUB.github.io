@@ -5,7 +5,7 @@ let base_test = [
         pista: "Recuerda la jerarquia",
         pista_img: "../img/Jerarquia.jpg",
         imagen: "../img/Test1.png",
-        respuesta: "Color/flush",
+        respuesta: "Color/flush", 
         distractores:["Carta Alta A","Doble pareja de A-A, K-K","Trío de A's"],
     },
     {
