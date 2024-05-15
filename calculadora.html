@@ -1,164 +1,168 @@
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prácticas de FHiC - PokerTiger - Index</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="/css/style_calculadora.css" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-</head>
-
-
-
-
-
-
-<div class="container-fluid p-4 bg-black text-left">
-
-  <style>
-    body {
-      padding: 0px;
-      margin-top: 0px;
-    }
-  </style>
-
-  <span style="font-size: 4.145vh;">Poker</span> <span style="font-size: 4.145vh; color: red;">Tiger</span>
-  <span style="font-size: 2.073vh; color: gold;"> Conviertete en el tigre de todas las mesas &hearts; &diams; &spades;
-    &clubs;</span>
-
-
-  <div class="dropdown">
-    <button type="button" class="btn btn-primary" data-bs-toggle="dropdown" id="leccionesdrop">
-      <strong>Lecciones</strong>
-    </button>
-    <ul class="dropdown-menu" id="leccionesmenu">
-      <li><a class="dropdown-item" href="teoria_lecciones.html#leccion1" id="principiante">Principiante</a></li>
-      <li><a class="dropdown-item" href="teoria_lecciones.html#leccion4" id="intermedio">Intermedio</a></li>
-      <li><a class="dropdown-item" href="teoria_lecciones.html#leccion7" id="experto">Experto</a></li>
-    </ul>
-  </div>
-
-  <div class="dropdown">
-    <button type="button" class="btn btn-primary" data-bs-toggle="dropdown" id="testdrop">
-      <strong>Tests</strong>
-    </button>
-    <ul class="dropdown-menu" id="testmenu">
-      <li><a class="dropdown-item" href="tests.html" id="principiante">Principiante</a></li>
-      <li><a class="dropdown-item" href="tests.html" id="intermedio">Intermedio</a></li>
-      <li><a class="dropdown-item" href="tests.html" id="experto">Experto</a></li>
-    </ul>
-  </div>
-
-  <div id="webnav">
-    <span style="margin-left: 0vh; margin-top: 0vh;"><strong><a href="index.html">Web</a></strong></span>
-  </div>
-
-  <div id="miembrosnav">
-    <span style="margin-left: 0vh;"><strong><a href="miembros.html">Miembros</a></strong></span>
-  </div>
-
-  <div id="contactonav">
-    <span style="margin-left: 0vh;"><strong><a href="contacto.html">Contacto</a></strong></span>
-  </div id="webnav">
-
-  <div id="calculadoranav">
-    <span style="margin-left: 0vh;"><strong><a href="calculadora.html">Calculadora de probabilidades</a></strong></span>
-  </div id="webnav">
-
-
-
-
-
-</div>
-
-
-
-<div class="container mt-5">
-
-  <style>
-    body {
-      background-image: url('/img/fondo');
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-size: cover;
-    }
-  </style>
+<!doctype html>
+<html>
   
 
-    <div class="row">
-        <div class="col-10">
-            <div class="calculator card" style="background-color:rgb(10, 151, 60); margin-left: 35vh; padding: 10px;">
-
-                <input type="text" class="calculator-screen z-depth-1" value="" disabled />
-          
-                <div class="calculator-keys">
-          
-                    <button type="button" class="operator btn btn-info" style="background-color: black; color: red; border: hidden;" value="+">&hearts;</button>
-                    <button type="button" class="operator btn btn-info" style="background-color: black; color: red; border: hidden;" value="-">&diams;</button>
-                    <button type="button" class="operator btn btn-info" style="background-color: black; color: gold; border: hidden;" value="*">&spades;</button>
-                    <button type="button" class="operator btn btn-info" style="background-color: black; color: gold; border: hidden;" value="/">&clubs;</button>
-
-
-                    <button type="button" value="J" data-mdb-button-init data-mdb-ripple-init class="btn btn-light waves-effect" style="background-color: black; color: gold; border: hidden;">J</button>
-                    <button type="button" value="Q" data-mdb-button-init data-mdb-ripple-init class="btn btn-light waves-effect" style="background-color: black; color: gold; border: hidden;">Q</button>
-                    <button type="button" value="K" data-mdb-button-init data-mdb-ripple-init class="btn btn-light waves-effect" style="background-color: black; color: gold; border: hidden;">K</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    <title>PokerTiger</title>
+    <link rel="icon" href="img/logo.png" type="image/png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href ="/css/style_calculadora.css" rel="stylesheet" >
+    
+  </head>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+              <img
+                src="img/Logo.png"
+                alt="Logo"
+                style="max-width: 120px"
+                title="Pulsa para ir a la página principal!"
+              />
+            </a>
+           
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="escogerNivel_lecciones.html"
+                  ><img
+                    src="img/Lecciones.png"
+                    alt="Lecciones"
+                    height="50"
+                    width="auto"
+                /></a>
+                <a class="nav-link" href="escogerNivel_tests.html"
+                  ><img
+                    src="img/Tests.png"
+                    alt="Tests"
+                    height="50"
+                    width="auto"
+                /></a>
+                <a class="nav-link" href="calculadora.html"
+                  ><img
+                    src="img/Calculadora.png"
+                    alt="Calculadora"
+                    height="50"
+                    width="auto"
+                /></a>
+                <a class="nav-link" href="proyecto.html"
+                  ><img
+                    src="img/Proyecto.png"
+                    alt="Proyecto"
+                    height="50"
+                    width="auto"
+                /></a>
+                <a class="nav-link" href="miembros.html"
+                  ><img
+                    src="img/Miembros.png"
+                    alt="Miembros"
+                    
+                    height="50"
+                    width="auto"
+                /></a>
                 
-                    <button type="button" value="8" data-mdb-button-init data-mdb-ripple-init class="btn btn-light waves-effect" style="background-color: black; color: gold; border: hidden;">8</button>
-                    <button type="button" value="9" data-mdb-button-init data-mdb-ripple-init class="btn btn-light waves-effect" style="background-color: black; color: gold; border: hidden;">9</button>
-                    <button type="button" value="10" data-mdb-button-init data-mdb-ripple-init class="btn btn-light waves-effect" style="background-color: black; color: gold; border: hidden;">10</button>
                 
-                
-                    <button type="button" value="5" data-mdb-button-init data-mdb-ripple-init class="btn btn-light waves-effect" style="background-color: black; color: gold; border: hidden;">5</button>
-                    <button type="button" value="6" data-mdb-button-init data-mdb-ripple-init class="btn btn-light waves-effect" style="background-color: black; color: gold; border: hidden;">6</button>
-                    <button type="button" value="7" data-mdb-button-init data-mdb-ripple-init class="btn btn-light waves-effect" style="background-color: black; color: gold; border: hidden;">7</button>
-                
-                
-                    <button type="button" value="2" data-mdb-button-init data-mdb-ripple-init class="btn btn-light waves-effect" style="background-color: black; color: gold; border: hidden;">2</button>
-                    <button type="button" value="3" data-mdb-button-init data-mdb-ripple-init class="btn btn-light waves-effect" style="background-color: black; color: gold; border: hidden;">3</button>
-                    <button type="button" value="4" data-mdb-button-init data-mdb-ripple-init class="btn btn-light waves-effect" style="background-color: black; color: gold; border: hidden;">4</button>
-                
-                
-                    <button type="button" value="A" data-mdb-button-init data-mdb-ripple-init class="btn btn-light waves-effect" style="background-color: black; color: gold; border: hidden;">A</button>
-                    <button type="button" class="btn btn-light waves-effect" value="." style="background-color: black; color: gold; border: hidden;">.</button>
-                    <button type="button" class="all-clear function btn btn-danger btn-sm" value="all-clear">AC</button>
-                
-                    <button type="button" class="equal-sign operator btn btn-default" value="=" style="background-color: black; color: gold; border: hidden;">=</button>
-          
-                </div>
+              </div>
             </div>
-            
-            <div class="container mt-5" style="margin-left: 60vh;">
-                <h6 style="font-size: xx-large;">83%</h6>
+          </div>
+        </nav>
+      </header>
+
+
+      <main>
+      <div class="instrucciones_calculadora">
+        <h2>Instrucciones: </h2>
+        <br>
+        <p>Introduce 2 cartas en la sección 'Tu mano' y de 3 a 5 en la sección 'Cartas Comunitarias'.</p>
+        <p>El formato de las cartas debe ser 'Xy', donde X debe ser un número del 2-9 o T-J-Q-K-A,(T es el 10),</p>
+        <p>y donde 'y' sea el palo que debamos introducir, donde: </p>
+        <p>- 'h' són <span style="color:red">&hearts;</span> corazones, 'd'<span style="color:red">&diams;</span> diamantes,</p>
+        <p>- 's' són <span style="color:black">&spades;</span> picas y 'c' són <span style="color:black">&clubs;</span> tréboles.</p>
+        
+
+        <div id="mesa-container">
+          <div body class="contenedor">
+            <h1>Calculadora de Probabilidades de Póker</h1>
+            <form id="poker-form">
+              <div class="input-group">
+                <label for="mano">Tu Mano:</label>
+                <input type="text" id="mano" placeholder="As Ks" />
+              </div>
+              <div class="input-group">
+                <label for="comunitarias">Cartas Comunitarias:</label>
+                <input type="text" id="comunitarias" placeholder="Ts 2d 3c 7h 8s" />
+              </div>
+              <a id="calcular_btn"class="btn btn-info" onclick="calcular_probabilidad()">
+                Calcular
+            </a>
+              
+            </form>
+            <div id="resultados"></div>
+          </div>
+        </div>
+      </div>
+  
+  
+      </main>
+
+
+    <footer class="bg-dark text-white">
+        <div class="container py-4">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="footer-box">
+                <h5>About PokerTiger</h5>
+                <p>
+                  La página que buscabas para aprender, mejorar y masterizar el Poker
+                </p>
+              </div>
             </div>
-
+            <div class="col-md-4">
+              <div class="footer-box">
+                <h5>Enlaces Rápidos</h5>
+                <ul class="list-unstyled">
+                  <li><a href="contacto.html" class="text-white">Contactanos</a></li>
+                  <li><a href="miembros.html" class="text-white">Conócenos</a></li>
+                  <li><a href="escogerNivel_lecciones.html" class="text-white">Aprende</a></li>
+                  <li><a href="escogerNivel_tests.html" class="text-white">Práctica</a></li>
+                  <li><a href="calculadora.html" class="text-white">Calculadora</a></li>
+                  <li><a href="proyecto.html" class="text-white">Proyecto</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="footer-box">
+                <h5>Contacto</h5>
+                <p>Correo: PokerTigrissimos@keloke.pei</p>
+                <p>Teléfono: 612 123 123</p>
+                <p>Oficina: C/ Marc Montgomery, 11.</p>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="footer-box">
+                <h5>FHIC 23-24 - POKERTIGER | Todos los derechos reservados.</h5>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col">
-            <h6><strong>Calcula las probabilidades que tienes de ganar esta mano:</strong></h6><br>
-            <p>
-                Primero introduce las cartas que hay sobre la mesa, pulsando el valor numerico de cada una seguido de su correspondiente palo.<br><br>
-                Despues pulsa el simbolo "."<br><br>
-                Una vez la calculadora sabe las cartas que hay sobre la mesa, indicale que 2 cartas tienes tu, de la misma manera que al principio.<br><br>
-                Finalmente, presiona "=" para que la calculadora te diga que porcentaje de victoria tienes.<br><br>
-
-                <strong>* Para borrar los datos introducidos o realizar otro calculo diferente has de presionar el boton "AC" *</strong>
-            </p>
-        </div>
-
-
-    </div>
-
-
-
-
-</div>
-
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      
+      <script src="js/calculadora.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
 </html>
-
-
-
-</html>
+  
