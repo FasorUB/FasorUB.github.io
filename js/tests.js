@@ -3,7 +3,7 @@ let puntuación = 0;
 
 
 
-
+actualizar_contador();
 cargarPregunta(INDEX_PREGUNTA);
 
 function cargarPregunta(index){
@@ -17,7 +17,7 @@ function cargarPregunta(index){
 
     }
     
-    document.getElementById("pregunta").innerHTML = objetoPregunta.pregunta;
+    document.getElementById("pregunta-test").innerHTML = objetoPregunta.pregunta;
     if(objetoPregunta.imagen){
         document.getElementById("imagen").src = objetoPregunta.imagen;
         document.getElementById("imagen").style.display = "";
@@ -61,6 +61,7 @@ async function seleccionarOpcion(index){
         });
     }
     INDEX_PREGUNTA++;
+    actualizar_contador();
     if (INDEX_PREGUNTA>= base_test.length){
         INDEX_PREGUNTA = 0;
         await Swal.fire({
@@ -84,4 +85,11 @@ function pista(){
         imageHeight: 400,
         
       });
+}
+function actualizar_contador(){
+    if(INDEX_PREGUNTA < base_test.length){
+        document.getElementById("contador-test").innerHTML = (INDEX_PREGUNTA + 1) + '/' + base_test.length;
+
+    }
+    
 }
