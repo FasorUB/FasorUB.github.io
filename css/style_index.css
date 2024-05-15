@@ -1,96 +1,318 @@
-    * {
-      box-sizing: border-box;
+/* cUERPO DEL DOCUMENTO */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+    color: #ffffff;
+    font-family: "Oswald", Impact;
+    background: rgba(13, 131, 58, 0.733);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* FUENTE PERSONALIZADA QUE UTILIZAREMOS*/
+  @font-face {
+    font-family: "Oswald";
+    src: url("../font/Oswald-Regular.ttf") format("opentype"),
+      url("../font/Oswald-Light.ttf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  /* HEADER */
+  header {
+    color: #fffbfc;
+    padding: 10px 20px; 
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,1), rgba(0, 187, 140,0.5)),
+      url("../img/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
+    box-sizing: border-box;
+    
+    
+    
+  }
+  /* RESPONSIBIDAD DE LA PAGINA */
+  
+  
+  @media (min-width: 576px) {
+    header {
+      width: 100%;
     }
-
-    body {
-      margin: 0;
+  }
+  
+  @media (min-width: 768px) {
+    header {
+      width: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
     }
-
-    .dropdown{
-      display: inline;
+  }
+  
+  @media (min-width: 992px) {
+    header {
+      width: 100%;
+      padding-left: 30px;
+      padding-right: 30px;
     }
-
-
-    #leccionesdrop{
-      margin-left: 5vh;
-      color: goldenrod;
-      background-color: black;
-      border-color: black;
+  }
+  
+  @media (min-width: 1200px) {
+    header {
+      width: 100%;
+      padding-left: 60px;
+      padding-right: 60px;
     }
+  }
+  .dropdown{
+    display: inline;
+  }
+  /* ENCABEZADO DE LA PAGINA */
+  #encabezado{
+    width: 60vw;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+  }
+  #contador-test{
+    position: absolute;
+    color: black;
+    font-size: 3vh;
+    top: 2vh;
+    left: 2vw; 
 
-    #testdrop{
-      margin-left: 5vh;
-      color: goldenrod;
-      background-color: black;
-      border-color: black;
-    }
+  }
+  #salir-test-btn{
+    position: absolute;
+    top: 2vh;
+    right: 2vw;
+  }
+  
+  #pregunta-test{
+    color: black;
+    text-size-adjust: 20vh;
+    font-size: 2.5vh;
+  }
+  .opcion-test{
+    width: 60vw;
+    background: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+    font-size: 2vh;
+  }
+  .opcion-test:hover{
+    background: lightgray;
+  }
+  /* ESTILO PARA LAS LETRAS Y TRANSICIONES DE IMAGENES Y LOS BOTONES*/
+  span {
+    color: white;
+  }
+  button:hover {
+    transform: scale(1.2); /* Increase the size on hover */
+  }
+  
+  
+  /* Estilos para interacción con imágenes */
+  img {
+    transition: transform 0.2s ease;
+  }
+  
+  
+  img:hover {
+    transform: scale(1.2);
+  }
+  /* PAGINA HTML PARA LOS TESTS */
+  .tests{
+    transition: none;
+    width: 80vw;
+    height: 30vh;
+    object-fit: contain;
+    
+  }
+  
+  .tests:hover{
+    transform: none;
+  }
+  .tests-p{
+    transition: none;
+    min-width: 70vw;
+    height: 25vh;
+    object-fit: contain;
+    
+  }
+  .tests-p:hover{
+    transform: none;
+  }
+    
+  #tablero-de-juego{
+    margin-left: 20vh;
+    margin-top: 10vh;
+  }
+  .fondo-interactivo{
+    background-image: url(https://i.ibb.co/nmhsbKT/pokerchip.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  /* FOOTER NO TOCAR */
+  footer {
+    background-color: #465362;
+    color: #1a0d22;
+    padding: 10px 20px;
+    text-align: center;
+    margin-top: auto;
+    background: linear-gradient(rgba(0, 187, 140, 0.422), rgba(0, 0, 0, 0.9)),
+      url("resources/background.png");
+    background-repeat: no-repeat;
 
-    #leccionesmenu{
-      background-color: black;
-    }
+    background-size: cover;
+    font-size: large;
 
-    #leccionesmenu{
-      background-color: black;
-    }
+  }
+  
+  .footer-box {
+    background-color: rgba(128, 128, 128, 0); /* Gris semitransparente */
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 5px; /* Bordes redondeados si se desea */
+  }
+  
+  /* Si tienes links dentro de tu footer-box y quieres asegurarte de que sean visibles */
+  .footer-box a.text-white {
+    text-decoration: none; /* Remueve el subrayado */
+  }
+  
+  .footer-box a.text-white:hover {
+    font-size: 30px; /* Increase the font size on hover */
+    transition: font-size 0.3s ease; /* Add a transition for smoother animation */
+  }
+   /* Lecciones*/
+   h2{
+    color: white;
+    font-size: xx-large;
+    font-weight: bold;
+  }
+ 
+  #lecciones-img1{
+    margin-top: 25px;
+    scale: none;
+  }
+  #lecciones_img1:hover{
+    transform: none;
+  }
+  #info-lecciones{
+    font-size: large;
+    
+  }
+  p{
+    font-size: large;
+    font-family: "Oswald";
+  }
+  
+ 
+  /* TOCAR LO QUE OS SALGA DE LA PINGA */
 
-    #testmenu{
-      background-color: black;
-    }
 
-    #principiante{
-      color: goldenrod;
-    }
+  
+  
+  
+  /*MIEMBROS*/
+  .sub-contenedor {flex: 1; padding: 10px;height: 600px;text-align: center; border: 2px solid #ccc}
 
-    #intermedio{
-      color: goldenrod;
-    }
+  .imagenes-miembros {
+    border-radius: 50%;
+    max-width: 80%;
+    max-height: 80%;
+    display: block;
+    margin: auto;
+    border: 1px solid #000000;
+  }
 
-    #experto{
-      color: goldenrod;
-    }
+  /*ESCOGER NIVEL*/
+  .card-link {
+    text-decoration: none;
+    color: golden;
+    display: block;
+  }
+  
+  .card-link:hover .card {
+    transform: scale(1.02);
+    transition: transform 0.2s;
+  }
 
+  .card {
+    background-color: black;
+    border-color: black;
+  }
+  
+  .card-title {
+    color: goldenrod;
+    text-shadow: 0cap;
+    font-size: 3vw;
+  }
+  
+  .card-text {
+    color: goldenrod;
+  }
 
-    img {
-      border-radius: 50%;
-      margin-top: 2.591vh;
-    }
+  .img-container-lecciones {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* Ajusta la altura según sea necesario */
 
+  }
 
-    span {
-      color: white;
-    }
-
-    :link {
-      color: goldenrod;
-      text-decoration: wavy;
-    }
-
-    :visited {
-      color: goldenrod;
-      text-decoration: wavy;
-    }
-
-    #contactonav {
-      width: 3.109vh;
-      height: 3.109vh;
-      margin-left: 5.181vh;
-      display: inline;
-    }
-
-    #miembrosnav {
-      width: 3.109vh;
-      display: inline;
-      margin-left: 5.181vh;
-    }
-
-    #webnav {
-      width: 3.109vh;
-      display: inline;
-      margin-left: 5.181vh;
-    }
-
-    #calculadoranav{
-      width: 3.109vh;
-      display: inline;
-      margin-left: 5.181vh;
-    }
+  .img-container img {
+    max-width: 5px; /* ajusta el tamaño máximo de la imagen según sea necesario */
+    height: auto; /* mantén la relación de aspecto */
+  }
+  .carousel-inner, .carousel-item img{
+    max-width: 100%;
+    max-height: fit-content;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    transform: none;
+    
+  }
+  .carousel-item:hover{
+    scale: none;
+  }
+  .carousel-item img::before{
+    background-color: rgba(0, 0, 0, 1);
+  }
+ 
+  .container-project{
+    
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      margin: 0 auto;
+      padding: 20px;
+      max-width: 1200px;
+      text-align: center;
+    
+  }
+  
