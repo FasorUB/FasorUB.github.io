@@ -1,128 +1,241 @@
-* {
+/* cUERPO DEL DOCUMENTO */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  color: #ffffff;
+  font-family: "Oswald", Impact;
+  background: rgba(13, 131, 58, 0.733);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+    
+    
+  }
+  /* FUENTE PERSONALIZADA QUE UTILIZAREMOS*/
+  @font-face {
+    font-family: "Oswald";
+    src: url("../font/Oswald-Regular.ttf") format("opentype"),
+      url("../font/Oswald-Light.ttf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  /* HEADER */
+  header {
+    color: #fffbfc;
+    padding: 10px 20px; 
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,1), rgba(0, 187, 140,0.5)),
+      url("../img/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
     box-sizing: border-box;
+    
+    
+    
   }
-
-  body {
-    margin: 0;
+  /* RESPONSIBIDAD DE LA PAGINA */
+  
+  
+  @media (min-width: 576px) {
+    header {
+      width: 100%;
+    }
   }
-
+  
+  @media (min-width: 768px) {
+    header {
+      width: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    header {
+      width: 100%;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    header {
+      width: 100%;
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+  }
   .dropdown{
     display: inline;
   }
-
-
-  #leccionesdrop{
-    margin-left: 5vh;
-    color: goldenrod;
-    background-color: black;
-    border-color: black;
+  /* ENCABEZADO DE LA PAGINA */
+  #encabezado{
+    width: 70vw;
+    min-height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;     
   }
-
-  #testdrop{
-    margin-left: 5vh;
-    color: goldenrod;
-    background-color: black;
-    border-color: black;
+  #pregunta-test{
+    color: black;
+    text-size-adjust: 20vh;
+    font-size: 2.5vh;
   }
-
-  #leccionesmenu{
-    background-color: black;
+  .opcion-test{
+    width: 70vw;
+    background: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+    font-size: 2vh;
   }
-
-  #leccionesmenu{
-    background-color: black;
+  .opcion-test:hover{
+    background: lightgray;
   }
-
-  #testmenu{
-    background-color: black;
-  }
-
-  #principiante{
-    color: goldenrod;
-  }
-
-  #intermedio{
-    color: goldenrod;
-  }
-
-  #experto{
-    color: goldenrod;
-  }
-
-
-  img {
-    border-radius: 50%;
-    margin-top: 2.591vh;
-  }
-
-
+  /* ESTILO PARA LAS LETRAS Y TRANSICIONES DE IMAGENES Y LOS BOTONES*/
   span {
     color: white;
   }
-
-  :link {
-    color: goldenrod;
-    text-decoration: wavy;
-  }
-
-  :visited {
-    color: goldenrod;
-    text-decoration: wavy;
-  }
-
-  #contactonav {
-    width: 3.109vh;
-    height: 3.109vh;
-    margin-left: 5.181vh;
-    display: inline;
-  }
-
-  #miembrosnav {
-    width: 3.109vh;
-    display: inline;
-    margin-left: 5.181vh;
-  }
-
-  #webnav {
-    width: 3.109vh;
-    display: inline;
-    margin-left: 5.181vh;
-  }
-
-  #calculadoranav{
-    width: 3.109vh;
-    display: inline;
-    margin-left: 5.181vh;
-  }
-
-  .calculator {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 60vh;
-    height: 80vh;
-  }
-  
-  .calculator-screen {
-    width: 100%;
-    height: 80px;
-    border: none;
-    background-color: #252525;
-    color: #fff;
-    text-align: right;
-    padding-right: 20px;
-    padding-left: 10px;
-    font-size: 4rem;
+  button:hover {
+    transform: scale(1.2); /* Increase the size on hover */
   }
   
   
-  .equal-sign {
-    height: 98%;
-    grid-area: 2 / 4 / 6 / 5;
+  /* Estilos para interacción con imágenes */
+  img {
+    transition: transform 0.2s ease;
+  }
+
+  .mapita{
+    max-width:100%;
+  }
+
+  #mesa-container{
+    position:relative;
+    text-align: center;
+  }
+
+  /* PAGINA HTML PARA LOS TESTS */
+  .tests{
+    transition: none;
+    width: 75%;
+    height: 200px;
+    object-fit: contain;
+    
+  }
+  .tests:hover{
+    transform: none;
+  }
+  #tablero-de-juego{
+    margin-left: 20vh;
+    margin-top: 10vh;
   }
   
-  .calculator-keys {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
+  /* FOOTER NO TOCAR */
+  footer {
+    background-color: #465362;
+    color: #1a0d22;
+    padding: 10px 20px;
+    text-align: center;
+    margin-top: auto;
+    background: linear-gradient(rgba(0, 187, 140, 0.422), rgba(0, 0, 0, 0.9)),
+      url("resources/background.png");
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: large;
+
+  }
+  
+  .footer-box {
+    background-color: rgba(128, 128, 128, 0); /* Gris semitransparente */
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 5px; /* Bordes redondeados si se desea */
+  }
+  
+  /* Si tienes links dentro de tu footer-box y quieres asegurarte de que sean visibles */
+  .footer-box a.text-white {
+    text-decoration: none; /* Remueve el subrayado */
+  }
+  
+  .footer-box a.text-white:hover {
+    font-size: 30px; /* Increase the font size on hover */
+    transition: font-size 0.3s ease; /* Add a transition for smoother animation */
+  }
+  /* TOCAR LO QUE OS SALGA DE LA PINGA */
+  
+  .contenedor {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    background-color: #34495e;
     padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 300px;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #c0392b;
+  }
+  
+  #resultados {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  .instrucciones_calculadora {
+    float: left;
+    margin-right: 20px; /* Ajusta este valor según sea necesario para el espaciado deseado */
+  }
+  p{
+    font-size: large;
   }
