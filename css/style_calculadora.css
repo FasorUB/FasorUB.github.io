@@ -12,14 +12,11 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  align-items: center;
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
   padding: 0;
-    
-    
-  }
+}
   /* FUENTE PERSONALIZADA QUE UTILIZAREMOS*/
   @font-face {
     font-family: "Oswald";
@@ -148,7 +145,6 @@ body {
     margin-top: 10vh;
   }
   
-  /* FOOTER NO TOCAR */
   footer {
     background-color: #465362;
     color: #1a0d22;
@@ -157,7 +153,6 @@ body {
     margin-top: auto;
     background: linear-gradient(rgba(0, 187, 140, 0.422), rgba(0, 0, 0, 0.9)),
       url("resources/background.png");
-    background-repeat: no-repeat;
     background-repeat: no-repeat;
     background-size: cover;
     font-size: large;
@@ -238,4 +233,9 @@ body {
   }
   p{
     font-size: large;
+  }
+ 
+  main{
+    align-items: center;
+    margin-left: 35%;
   }
